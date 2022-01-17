@@ -1,0 +1,20 @@
+@use "../custom" as *;
+
+.our-work {
+    .carousel-caption {
+        top: 0;
+    }
+    .carousel-inner {
+        .carousel-item {
+            text-align: center !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .our-work {
+        .w-sm-100 {
+            width: 100% !important;
+        }
+    }
+}

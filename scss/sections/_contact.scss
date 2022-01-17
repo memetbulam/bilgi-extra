@@ -1,0 +1,34 @@
+@use "../custom" as *;
+
+.contact {
+    .contact-text-edit {
+        text-align: end;
+        vertical-align: middle;
+    }
+    .mtop-contact {
+        margin-top: 100px;
+    }
+
+    .mbottom-contact {
+        margin-bottom: 100px;
+    }
+    .border-right {
+        border-right: 2px solid rgba($color: $primary, $alpha: 0.5);
+    }
+}
+
+@media (max-width: 992px) {
+    .contact {
+        .mtop-contact {
+            margin-top: 20px;
+        }
+
+        .mbottom-contact {
+            margin-bottom: 20px;
+        }
+
+        .border-right {
+            border-right: none;
+        }
+    }
+}

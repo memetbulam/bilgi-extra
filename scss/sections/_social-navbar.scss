@@ -1,0 +1,7 @@
+@use "../custom" as *;
+
+#socialNav {
+    background-color: $primary;
+    padding: 5px 0 3px 0;
+    color: $secondary;
+}

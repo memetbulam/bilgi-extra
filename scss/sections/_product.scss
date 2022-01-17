@@ -1,0 +1,121 @@
+@use "../custom" as *;
+
+.product {
+    .product-item {
+        .product-caption {
+            padding: 1.5rem;
+            text-align: center;
+            background-color: $white;
+            .product-caption-heading {
+                font-size: 1.5rem;
+                font-family: "Ubuntu", sans-serif !important;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            .product-caption-subheading {
+                font-style: italic;
+                font-family: "Ubuntu", sans-serif !important;
+            }
+        }
+
+
+        .hover-overlay-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .hover-overlay-container:hover .overlay-text-container {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .hover-overlay-container .overlay-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .hover-overlay-container .overlay-text-container {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background-color: $primary;
+        }
+
+        .hover-overlay-container .overlay-text-container .overlay-text {
+            color: $secondary;
+            font-size: 28px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+/*@use "../custom" as *;
+
+.cs-default {
+    cursor: default;
+}
+
+.product .product-item {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product .product-item .product-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.product .product-item .product-link .product-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $secondary;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+.product .product-item .product-link .product-hover .product-hover-content {
+    font-size: 1.25rem;
+    color: $white;
+}
+
+.product .product-item .product-link:hover .product-hover {
+    opacity: 1;
+}
+
+.product .product-item .product-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: $white;
+}
+
+.product .product-item .product-caption .product-caption-heading {
+    font-size: 1.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.product .product-item .product-caption .product-caption-subheading {
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+*/
